@@ -46,7 +46,7 @@ int main()
 		 s_t =  pow(s_t,i);
 		 t_t = pow(v,l-(2*i)) ;
 		temp = (  f_t * s_t%M * t_t%M)%M;
-		cout<<f_t<<" "<<s_t<<" "<<" "<<t_t<<" "<<temp<<endl;
+		//cout<<temp<<endl;
 		total = total + temp;
 		//cout<<i<<"::"<<temp<<endl;
 		i++;
