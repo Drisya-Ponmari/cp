@@ -24,10 +24,19 @@ int month(int m,int y)
     else
         return 30;
 }
-
-int main()
+int result(int r1)
 {
-	long long int T = 1000000;
+	switch(r1) 
+	{
+		case 0 : return 28;
+		case 1 : return 6;
+		case 2 : 
+		case 3 : return 11;
+	}
+}
+int main()
+{/*
+	long long int T = 1000001;
     long long int a[T];
     a[1]=0;
     for(long long int i=2;i<=T;i++)
@@ -42,7 +51,7 @@ int main()
             if(fst_fri+10 >= sec_lst_sun)
                 a[i] = 1;
           //cout<<a[i]<<endl;
-    	}
+    	}*/
     int t;
     cin>>t;
     while(t--)
@@ -57,8 +66,39 @@ int main()
            	y1++;
            if(m2<2)
            	y2--;
-           
-        	cout<<accumulate(a+y1,a+y2+1,0)<<endl;
+           	
+           //first calender
+           long yc1=0,yc2=0;
+           int flag = 0;
+           while(y1<=y2)
+           {
+           		int fst_fri = day(1,2,y1);
+           		if(fst_fri == 6 )
+           		{
+           			flag++;
+					yc1 = y1;
+					
+					
+				}
+    	   		
+    	   		if(fst_fri == 0)
+           		{
+           			flag++;
+					yc2 = y1;
+				}
+    	   		if(flag >= 2)
+    	   			break;
+           		y1++;
+           }
+           cout<<yc1<<" "<<yc2<<endl;
+           int r1,r2;
+           r1 = yc1%4;
+           r2 = yc2%4;
+           if(yc1!=0)
+           	cnt = cnt+((y2 - yc1)/(result(r1))) + 1;
+           if(yc2!=0)
+           	cnt = cnt+((y2 - yc2)/(result(r2)) )+ 1;
+         cout<<cnt<<endl;
     }
     
     return 0;
