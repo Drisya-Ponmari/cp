@@ -7,6 +7,7 @@ using namespace std;
 const long long int  mod =  1000000007;
 const l N = 1e7+2;
 
+
 ll path[4][N];
 ll v[4][N];
 
