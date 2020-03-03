@@ -8,42 +8,20 @@ const long long int  mod =  1000000007;
 const l N = 1e7+2;
 
 
-ll path[4][N];
-ll v[4][N];
-
-ll find_path(int src,l n)
-{
-
-	if(n == 0)
-	{
-		if(src == 3)
-			return 1;
-		else
-			return 0;
-	}
-
-	ll &ans = path[src][n];
-//	cout<<v[src][n]<<endl;
-	if(v[src][n])
-		return ans;
-	v[src][n] =1;
-	ans = 0;
-	for(int i =0;i<=3;i++)
-	{
-		if(i != src)
-			ans  +=  find_path(i,n-1);	
-		if(ans >= mod)
-			ans -= mod;
-	}
-	return ans;
-
-}
 int main()
 {
 	l n;
 	cin>>n;
-	cout<<find_path(3,n)<<endl;
-
+	ll dp[2][n];
+	dp[1][0] = 1;
+	dp[0][0] = 0;
+	for(l steps = 1;steps<=n;steps++)
+	{
 	
+		dp[1][steps] = (3 * dp[0][steps-1])%mod; 
+		dp[0][steps] =(2 *dp[0][steps-1] + dp[1][steps-1])%mod;
+	
+	}		
+	cout<<dp[1][n]<<endl;
 	return 0;
 }
