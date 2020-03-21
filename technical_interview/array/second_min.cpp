@@ -24,4 +24,8 @@ int main()
 	cout<<second<<endl;
 	
 	return 0;
+
 }
+
+//time complexity o(n)
+
