@@ -1,0 +1,151 @@
+
+################PROJECT###########################################################
+
+PROJECT 1 : DEVELOPMENT OF ANDROID MOBILE APPLICATION  WISEORDER
+---------------------------------------------------------------------
+What is purpose of app : It smoothens the ordering and billing of restaurant orders.
+what was my job : my job was to refactor the code make it in a more readable format .
+how did I do : I worked with the libraries called Retrofit,Dagger,Dabinding and Architectural pattern
+				I used is MVP (Model view presenter)
+				
+				
+Architectural pattern MVP : Model :which contains all the datas in an activity
+							view : What all the things  a user see 
+							Presenter : Useful functions that connects between Model and view
+							
+Retrofit : type - save  HTTP client 
+		   It parse JSON data into Java objects 
+		   
+Dagger : Dependency injection from outside.Suppose more than one activity depends on a function 
+         we don't need to write it again and again ,inside an activity.
+
+Databinding : It reduces the complexity when we play about the view.Earlier we have to inflate the xml layout
+			  and use findviewbyID to get each view like button,image ,text etc.
+			  But when we use databinding It will create a class of views and we can acquire it just
+			  by class.Id
+			  
+
+-----------------------------------------------------------------------------------------------------------------------
+
+
+PROJECT 2 : CYCLONE EYE DETECTION
+-------------------------------------------------------------------------------------------		   
+problem statement: Detect the eye of the cyclone.Given images of the cyclone.
+what we have done so far : 
+			
+			1.Generate the dataset ,rigid body simulator(Rainbow image 800 * 800) 
+			2.Each and every point velocity by optical flow result :  got 400 * 400 image and 
+				label it into centre
+			4. neural network,linear regression,mean squared loss  
+			5. Good accuracy with training set
+			
+			
+			problems for less accuracy of test dataset
+			-----------------
+			1. optical images,noise are there,
+			2. actual cyclone is moving as well
+			
+			How to overcome:
+			----------------------
+			1.Simulate with the whirlpool image
+			2.Decrease the noise in the test image
+
+PROJECT 3 : DEFECT DETECTION IN STEEL SURFACES
+--------------------------------------------------------------------------------------------
+Detecting the defect in the steel surface 
+Given train set defect in that(note that note everything has defect)
+
+
+
+PROJECT 4 : PATHFINDING ALGORITHMS IN PYTHON
+--------------------------------------------------------------------------------------------
+Implemented BFS ,DFS,A* with obstacles in a grid and shown it's animation using  matplotlib library
+matplotlib.animation.AritstsAnimation 
+
+what is BFS : Breadth first search ,Queue implementation , Going through neighbours 
+what is DFS : Dept first search,
+what is A*  : heuristic approach ,best first search  f(n) = g(n) + h(n)
+   		
+
+PROJECT 5 : MOUNTAIN CAR (Q Learning)
+-------------------------------------------------------------------------------------------
+Problem statement: Find the optimal policy to climb a hill
+How we did : Using Q learning ,find out the Action 
+what is Q learning :
+
+Q(st,at) = Q(st,at) + alpha(reward + gamma * (maxQa(st+1,a) - Q(st,at)) )
+learning rate : How much u learn from next steep
+gamma (discount factor) = How much we rely on the discount factor
+
+PROJECT 6 : GARBAGE MANAGEMENT SYSTEM
+-------------------------------------------------------------------------------------------
+design
+---------
+5 collection points
+Each contains 3 types of wate collection 1.Biodegradable
+										 2.Non biodegradable recyclable
+										 3.Non biodegradable non Recyclable 
+										 
+3 trucks
+			1.Big truck (can collect 3 different collection points)
+			2. Medium truck (can collect 2 collection points)
+			3. small truck (can collect 1 collection points)
+			
+Goal : Minimum truck trips
+
+Routine collection : thrice a week (synchronus counter T flip flop ,leds will blink)
+And based on sensor output we will be dispatching truck(priority encoders)
+
+
+
+			
+
+
+PROJECT 7 : ARDUINO BASE VOLTMETER
+------------------------------------------------------------------------------------------
+
+#Voltage measuring and displaying in digital format.
+#Use analog digital converters in the arduino
+#library used LiquidCrystal.h
+#analogRead(A) to read the value
+#voltage divider is used to increase the range of voltage
+
+###############TECHNICAL SKILLS############################################
+
+1.DEEP LEARNING WITH TENSORFLOW
+--------------------------------------------------------------------------
+
+
+
+2.MACHINE LEARNING AND REINFORCEMENT LEARNING TECHNIQUE
+--------------------------------------------------------------------------
+Reinforcement learning : How agents are taking action to increase their cumulative reward
+Bayesian classification
+		probabilistic approch
+		next word prediction	
+	
+perceptron
+	
+SVM
+			
+Linear = continuos and Logistic regression =categorical
+		Loss function 
+		
+	
+MDP
+	Markov decision process
+	
+Q-learning
+Q(st,at) = Q(st,at) + alpha(reward + gamma * (maxQa(st+1,a) - Q(st,at)) )
+
+
+3.PROGRAMMING LANGUAGES
+---------------------------------------------------------------------------
+
+
+What happens when I type www.google.com  into my  browser's URL bar
+------------------------------------------------------------------------
+
+
+
+
