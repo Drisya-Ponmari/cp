@@ -29,4 +29,7 @@ int main()
 
 /*How to compile this code --> g++ -std=c++0x first_non_repeating_element.cpp 
 time complexity --O(n)
+Using unordered map 
+unordered_map<int,int> mp 
+
 */

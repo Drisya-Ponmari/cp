@@ -30,5 +30,10 @@ int main()
 		cout<<"("<<x.first<<" ,"<<x.second<<")"<<" "; 
 	
 	}*/
+
+	long long int total_handshake = (N * (N-1) /2);
+	long long int set_size = s.size();
+	total_handshake = total_handshake - (set_size/2);
+	cout<<total_handshake<<endl;
 	return 0;
 }
