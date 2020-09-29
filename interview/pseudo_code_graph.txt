@@ -1,0 +1,97 @@
+BFS
+----------------------
+BFS ( G, s)
+
+	let Q be empty
+	Q.enqueu(s)
+	mark s visited
+	while ( Q not empty)
+		v = Q.dequeue
+		for all u , neighbours of v
+			if u are not visited
+				mark u visited
+				Q.enqueue(u)
+
+
+DFS
+-------------------------------------------------
+DFS (G,s)
+	let S be empty #stack
+	S.push(s)
+	mark s visited
+	while S not empty
+		v = S.pop()
+		for all u , neighbours of v
+		 	if u is not visited 
+				mark u visited
+					S.push(u)
+-------------------------------------------------------
+
+Dijktra
+D (G,s)
+	initialise a set which is empty
+	initialise the cost of all vertices is infinite
+	insert s in set
+	dis[s] = 0
+	while ( set does not conains all the vertices)
+		u = minumum cost vertex which is not in the set
+		set.push(s)
+		relax the neighbours of u
+-----------------------------------------------------------
+Bellman ford 
+Bellman ( G, s)
+	initialise the distance of vertices is infinite
+	dist[s]  = 0
+	for i = 1; i < V -1; i++
+		for all edges e
+			relax e if ( dist[u] not infinite)
+--------------------------------------------------------------
+
+
+Edge coloring
+
+ Edge ( graph, src)
+ 	initialize n sets for all vertices empty s1, s2 ..... sn
+	visiteds is false for all v
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
